@@ -143,6 +143,11 @@ a:hover{
     height: 500px;
     object-fit: cover;
     border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.section_pic-container img:hover {
+  transform: scale(1);
 }
 
 /*media queriess */
