@@ -131,6 +131,20 @@ a:hover{
     transform: rotate(-45deg) translate(10px, 5px);
 }
 
+
+/*IMAGE */
+.section_pic-container{
+    display: flex;
+    justify-content: center;
+}
+
+.section_pic-container{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 /*media queriess */
 @media screen and (max-width:1200px){
     #desktop-nav {
