@@ -296,3 +296,9 @@ section{
 .cv-page section + section {
     margin-top: 18px;
 }
+
+.cv-page section :first-of-type{
+    text-align: center;
+    padding: 32px 22px;
+    background: linear-gradient(180deg, #eef3ff 0%, #ffffff 70%);
+}
