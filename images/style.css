@@ -351,3 +351,9 @@ cv-page a[download]{
     opacity: 0.95;
     transform: translateY(-1px)
 }
+
+ul{
+  list-style-position: inside;
+  padding-left: 0;
+  margin-left: 0;
+}
