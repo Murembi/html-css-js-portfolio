@@ -281,3 +281,18 @@ section{
     width:min(1100px, 92%);
     margin: 30px auto 60px;
 }
+.cv-page section{
+    margin: 0;
+    padding:22px;
+    height: auto;
+    min-height: auto;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 14px;
+    box-shadow: 0 10px 26px rgb(0,0,0, 0.06);
+}
+/*spaces */
+.cv-page section + section {
+    margin-top: 18px;
+}
