@@ -315,3 +315,23 @@ section{
     color: rgb(85, 85, 85);
     margin-bottom: 14px;
 }
+
+/* sections */
+.cv-page section h2{
+    font-size: 20px;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+/* LISTS */
+.cv-page ul{
+    margin-left:18px;
+    margin-top: 10px;
+}
+
+cv-page li{
+    margin: 6px 0;
+}
+
