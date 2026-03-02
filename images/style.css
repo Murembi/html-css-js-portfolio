@@ -335,3 +335,19 @@ cv-page li{
     margin: 6px 0;
 }
 
+cv-page a[download]{
+    display: inline-block;
+    margin-top: 12px;
+    padding: 11px 18px;
+    border-radius: 12px;
+    background: #1f5cff;
+    color:white;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid #1f5cff
+}
+
+.cv-page a[download]:hover{
+    opacity: 0.95;
+    transform: translateY(-1px)
+}
