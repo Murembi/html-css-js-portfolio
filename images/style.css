@@ -274,3 +274,10 @@ section{
     cursor:pointer;
 
 }
+
+/* CV PAGE */
+
+.cv-page{
+    width:min(1100px, 92%);
+    margin: 30px auto 60px;
+}
