@@ -36,7 +36,7 @@ nav{
 }
 
 .nav-links{
-    gap: 2rem; /* add gaps between the nav links rem is unit of measurement*/
+    gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
 }
@@ -133,22 +133,6 @@ a:hover{
 
 
 /*IMAGE */
-.section_pic-container{
-    display: flex;
-    justify-content: center;
-}
-
-.section_pic-container{
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-}
-
-.section_pic-container img:hover {
-  transform: scale(1);
-}
 
 /*media queriess */
 @media screen and (max-width:1200px){
@@ -167,6 +151,7 @@ section{
     height: 96vh;
     box-sizing: border-box;
     min-height: fit-content;
+    height: auto;
 }
 
 .section-container{
@@ -177,8 +162,11 @@ section{
 #profile{
     display: flex;
     justify-content: center;
-    gap: 5 rem;
-    height: 80vh;
+    align-items: center;
+    height: auto;
+    min-height: calc(100vh - 17vh);
+    margin: 0 auto;
+    padding: 3rem 1rem;
 }
 
 .section_pic-container{
@@ -186,6 +174,59 @@ section{
     height: 400px;
     width: 400px;
     margin: auto 0;
+}
+
+.profile-card{
+    width: min(1100px, 92%);
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+/* IMAGE BOX */
+.section_pic-container{
+    width: 320px;
+    height: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* SQUARE IMAGE */
+.section_pic-container img{
+    width: 100px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* IMAGE FILLS THE BOX */
+.section_pic-container img{
+    width: 110%;
+    height: 110%;
+    object-fit: cover;      
+    object-position: center;
+    display: block;
+}
+/* TEXT BOX */
+.section_text{
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+}
+.section_text__p1{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+    .profile-card{
+        grid-template-columns: 1fr;
+    }
 }
 
 .section_text{
@@ -356,3 +397,48 @@ ul{
   padding-left: 0;
   margin-left: 0;
 }
+
+/* CONTACT PAGE */
+#contact-page{
+  width: min(1100px, 92%);
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+    align-items: start;
+}
+
+.contact-info{
+    text-align: left;
+    line-height: 1.8;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-family: inherit;
+}
+
+.contact-form button{
+    width: 100%;
+}
+
+@media (max-width: 900px){
+    .contact-container{
+        grid-template-columns: 1fr;
+    }
+}
+
