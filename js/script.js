@@ -28,3 +28,43 @@ if (contactForm) {
         this.reset();
     });
 }
+
+// UI helpers for the main page
+function toggleMenu() {
+    const menuLinks = document.querySelector('.menu-links');
+    if (menuLinks) {
+        menuLinks.classList.toggle('open');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    // hamburger icon
+    const hamburger = document.getElementById('hamburgerIcon');
+    if (hamburger) {
+        hamburger.addEventListener('click', toggleMenu);
+    }
+
+    // close menu when any link clicked
+    document.querySelectorAll('.menu-link').forEach(link => {
+        link.addEventListener('click', toggleMenu);
+    });
+
+    // contact button navigation
+    const contactBtn = document.getElementById('contactButton');
+    if (contactBtn) {
+        contactBtn.addEventListener('click', () => {
+            location.href = './contact.html';
+        });
+    }
+
+    // social icons
+    document.querySelectorAll('#socials-container .social-link').forEach(icon => {
+        icon.addEventListener('click', () => {
+            if (icon.classList.contains('linkedin')) {
+                location.href = 'https://www.linkedin.com/in/murembiwa-mutswaletswale-3ba086226/';
+            } else if (icon.classList.contains('github')) {
+                location.href = 'https://github.com/Murembi';
+            }
+        });
+    });
+});

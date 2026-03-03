@@ -25,17 +25,17 @@
     <div class = "logo">Murembiwa Christinah Mutswaletswale</div>
     <div class="hamburger-menu">
 
-        <div class = "hamburger-icon" onclick="toggleMenu()">
+        <div id="hamburgerIcon" class = "hamburger-icon">
             <span></span>
             <span></span>
             <span></span>
         </div>
         <div class="menu-links">
             <ul>
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experiences" onclick="toggleMenu()">Experience</a></li>
-            <li><a href ="portfolio.html" onclick="toggleMenu()">Portfolio</a></li>
-            <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            <li><a href="#about" class="menu-link">About</a></li>
+            <li><a href="cv.html" class="menu-link">CV</a></li>
+            <li><a href ="portfolio.html" class="menu-link">Portfolio</a></li>
+            <li><a href="contact.html" class="menu-link">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -67,9 +67,7 @@
                 Download CV
                     </a>
 
-                <button class = "btn btn-color-1"
-                onclick= "location.href='./contact.html'"
-                >
+                <button id="contactButton" class="btn btn-color-1">
                 Contact Info
             </button>
 
@@ -79,14 +77,14 @@
             <img 
             src="./images/linkedin.png"
             alt="My linkedin profile"
-            class = "icon"
-            onclick="location.href='https://www.linkedin.com/in/murembiwa-mutswaletswale-3ba086226/'">
+            class = "icon social-link linkedin"
+            >
             
             <img 
             src="./images/github.png"
             alt="My GitHub profile"
-            class = "icon"
-            onclick="location.href = 'https://github.com/Murembi'">
+            class = "icon social-link github"
+            >
         
         </div>
 
