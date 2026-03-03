@@ -371,11 +371,11 @@ section{
     margin-top: 10px;
 }
 
-cv-page li{
+.cv-page li{
     margin: 6px 0;
 }
 
-cv-page a[download]{
+.cv-page a[download]{
     display: inline-block;
     margin-top: 12px;
     padding: 11px 18px;
@@ -398,6 +398,15 @@ ul{
   margin-left: 0;
 }
 
+.cv-page li{
+    margin: 6px 0;
+}
+
+.cv-page ul{
+    list-style: none;
+     padding-left: 0;
+     margin-left: 0; 
+}
 /* CONTACT PAGE */
 #contact-page{
   width: min(1100px, 92%);
