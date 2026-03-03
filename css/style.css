@@ -203,7 +203,7 @@ section{
 /* IMAGE FILLS THE BOX */
 .section_pic-container img{
     width: 110%;
-    height: 110%;
+    height: 140%;
     object-fit: cover;      
     object-position: center;
     display: block;
