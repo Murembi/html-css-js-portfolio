@@ -316,6 +316,14 @@ section{
 
 }
 
+/* FOOTER SECTION*/
+footer {
+    background-color: #222;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
 /* CV PAGE */
 
 .cv-page{
