@@ -420,6 +420,7 @@ ul{
      padding-left: 0;
      margin-left: 0; 
 }
+
 /* CONTACT PAGE */
 #contact-page{
   width: min(1100px, 92%);
@@ -521,3 +522,5 @@ ul{
 .details-container .icon{
     height: 2.2rem;
 }
+
+/* PORTFOLIO */
