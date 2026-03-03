@@ -359,10 +359,15 @@ section{
 /* sections */
 .cv-page section h2{
     font-size: 20px;
-    margin-bottom: 12px;
-    padding-bottom: 10px;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
     border-bottom: 1px solid #eee;
     position: relative;
+}
+
+.cv-page section p,
+.cv-page section ul{
+    margin-top: 6px;
 }
 
 /* LISTS */
@@ -451,3 +456,60 @@ ul{
     }
 }
 
+/* About me */
+#about{
+    width: min(1100px, 92%);
+    margin: 6rem auto;
+}
+
+#about .section_text_p1{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.5px;
+}
+#about .title{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-details-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.text-container{
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.about_containers{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.details-container{
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 16px;
+    padding: 1.8rem;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.details-container:hover{
+    transform: translateY(-6px);
+}
+.details-container h3{
+    margin: 0.8rem 0 0.5rem;
+}
+
+.details-container .icon{
+    height: 2.2rem;
+}
