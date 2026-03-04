@@ -1,4 +1,4 @@
-// Contact Form Handler
+
 const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
@@ -29,7 +29,7 @@ if (contactForm) {
     });
 }
 
-// UI helpers for the main page
+
 function toggleMenu() {
     const menuLinks = document.querySelector('.menu-links');
     if (menuLinks) {
@@ -44,12 +44,11 @@ document.addEventListener('DOMContentLoaded', () => {
         hamburger.addEventListener('click', toggleMenu);
     }
 
-    // close menu when any link clicked
     document.querySelectorAll('.menu-link').forEach(link => {
         link.addEventListener('click', toggleMenu);
     });
 
-    // contact button navigation
+    
     const contactBtn = document.getElementById('contactButton');
     if (contactBtn) {
         contactBtn.addEventListener('click', () => {
@@ -57,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // social icons
+    
     document.querySelectorAll('#socials-container .social-link').forEach(icon => {
         icon.addEventListener('click', () => {
             if (icon.classList.contains('linkedin')) {

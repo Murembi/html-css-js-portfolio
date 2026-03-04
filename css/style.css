@@ -136,13 +136,95 @@ a:hover{
 
 /*media queriess */
 @media screen and (max-width:1200px){
+    /* switch to hamburger menu on smaller desktops / large tablets */
     #desktop-nav {
-        display:none
+        display:none;
     }
     #hamburger-nav{
         display:flex;
     }
+    /* reduce padding on sections */
+    section{
+        margin:0 4rem;
+    }
 }
+
+/* tablet-sized screens */
+@media screen and (max-width:900px){
+    /* nav adjustments */
+    .nav-links{
+        gap:1rem;
+        font-size:1.25rem;
+    }
+    section{
+        margin:0 2rem;
+        padding-top:3vh;
+    }
+    .profile-card{
+        grid-template-columns: 1fr;
+    }
+    .section_pic-container{
+        width: 240px;
+        height: 240px;
+    }
+    .btn{
+        width: 7rem;
+        padding:0.8rem;
+    }
+    /* contact page layout stack already defined */
+    .contact-container{
+        grid-template-columns: 1fr;
+        gap:2rem;
+    }
+}
+
+/* phone-sized screens */
+@media screen and (max-width:600px){
+    body{
+        font-size: 0.9rem;
+    }
+    nav{
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 1.1rem;
+    }
+    .logo{
+        margin-bottom: 1rem;
+    }
+    section{
+        margin:0 1rem;
+        padding-top:2vh;
+    }
+    .section_pic-container{
+        width: 180px;
+        height: 180px;
+    }
+    .section_text{
+        padding:1rem;
+    }
+    .title{font-size:2.4rem;}
+    .btn{
+        width: 100%;
+        padding:0.6rem;
+    }
+    .featured-card,
+    .project-card{
+        padding:1.5rem;
+    }
+    .featured-media img{max-width:100%;}
+
+    /* hide project images on phones */
+    .featured-media img,
+    .project-card img {
+        display: none;
+    }
+}
+
 
 /* SECTIONS */
 section{
@@ -691,4 +773,22 @@ ul{
 .project-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+/* portfolio mobile responsive adjustments */
+@media (max-width: 768px){
+
+  .site-nav{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featured-card{
+    display: block;
+  }
+
+  img{
+    width: 100%;
+    height: auto;
+  }
+
 }
