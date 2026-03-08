@@ -774,21 +774,3 @@ ul{
     transform: translateY(-6px);
     box-shadow: 0 15px 40px rgba(0,0,0,0.08);
 }
-/* portfolio mobile responsive adjustments */
-@media (max-width: 768px){
-
-  .site-nav{
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .featured-card{
-    display: block;
-  }
-
-  img{
-    width: 100%;
-    height: auto;
-  }
-
-}
