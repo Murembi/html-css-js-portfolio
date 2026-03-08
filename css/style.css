@@ -3,13 +3,14 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     font-family:"poppins", sans-serif;
 }
 
-html{
+html, body{
     scroll-behavior: smooth;
 }
 
@@ -228,12 +229,11 @@ a:hover{
 
 /* SECTIONS */
 section{
-    margin:0 10rem;
-    padding-top:4vh;
-    height: 96vh;
+    width: min(1100px, 92%);
+    margin: 0 auto;
+    padding-top: 4vh;
     box-sizing: border-box;
     min-height: fit-content;
-    height: auto;
 }
 
 .section-container{
